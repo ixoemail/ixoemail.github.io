@@ -7,13 +7,6 @@ body {
   height: 100%;
   font-size: 18px;
 }
-body {
-    font-family: "Questrial", sans-serif;
-  background-color: #fff9ed;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
 .btn {
   position:fixed;
