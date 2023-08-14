@@ -1,5 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Muli:ital,wght@0,400;0,900;1,500&display=swap');
 
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-size: 18px;
+}
+body {
+    font-family: "Questrial", sans-serif;
+  background-color: #fff9ed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  position:fixed;
+  left:20px;
+  top:20px;
+  font-family:inherit;
+  font-size: inherit;
+  background: white;
+  padding: 0.3rem 1rem;
+  border: 3px solid black;
+  box-shadow: 0 0 0 black;
+  transition: all 0.2s;
+}
+
+.btn:hover {
+  box-shadow: 0.4rem 0.4rem 0 black;
+  transform: translate(-0.4rem, -0.4rem);
+}
+
+.btn:active {
+  box-shadow: 0 0 0 black;
+  transform: translate(0, 0);
+}
 
 body {
   font-family: "Muli";
