@@ -1,3 +1,253 @@
+:root {
+  --green-dark: #306a2f;
+  --green: #6b8d11;
+  --green-light: #bac856;
+  --space: 4%;
+  --font-title: "Anton", sans-serif;
+  --font-text: "Nunito", sans-serif;
+  --radius: 4rem;
+}
+
+body {
+  background: #ffe4f2;
+  font-family: serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+}
+
+section {
+  min-height: 110vh;
+  position: relative;
+}
+section:first-child {
+  background: #ee66aa;
+  padding-top: 1%;
+}
+section:not(:first-child) {
+  padding-top: 2%;
+}
+
+.main {
+  position: fixed;
+  width: 70%;
+  max-width: 70rem;
+  top: 2%;
+  left: 50%;
+  transform: translateX(-33%);
+  margin-bottom: 10rem;
+  z-index: 100;
+}
+@media (max-width: 60rem) {
+  .main {
+    width: 95%;
+    transform: translateX(-50%);
+    top: 22%;
+  }
+}
+.main .container {
+  margin: 4% auto 0;
+  background: #f9f9f9;
+  padding-bottom: 1%;
+  overflow: hidden;
+  border: 2px solid;
+}
+.main .img-woman {
+  height: 110%;
+  right: -20%;
+  position: absolute;
+  bottom: 0;
+  width: auto;
+  opacity: 0;
+}
+.main .hero {
+  display: flex;
+  position: relative;
+  background: #fff;
+  color: #fff;
+  text-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.info {
+  flex: 0 0 90%;
+  position: relative;
+  padding: calc(var(--space) * 2) var(--space) calc(var(--space) * 3.5) calc(var(--space) * 2);
+}
+.info__copy {
+  font-size: clamp(1.4rem, 5.5vw, 4.5rem);
+  color: #333;
+  max-width: 20ch;
+  line-height: 1.1;
+  z-index: 2;
+  position: relative;
+}
+
+.selection {
+  display: flex;
+  width: 75%;
+  margin: -3% calc(var(--space) / 3) calc(var(--space)*0.8) 0;
+  position: relative;
+  padding-left: 8%;
+  z-index: 10;
+}
+@media (max-width: 60rem) {
+  .selection {
+    margin: 2rem calc(var(--space) / 3) calc(var(--space)*0.8) 0;
+  }
+}
+.selection__item {
+  margin: 0 calc(var(--space) / 2);
+  flex: 1;
+  text-align: center;
+  position: relative;
+}
+@media (max-width: 60rem) {
+  .selection__item:nth-child(1), .selection__item:nth-child(4) {
+    display: none;
+  }
+}
+.selection__item img {
+  width: 100%;
+  max-width: 14rem;
+  margin: -55% auto 1rem;
+  height: 17rem;
+  object-fit: contain;
+  object-position: bottom;
+}
+@media (max-width: 60rem) {
+  .selection__item img {
+    height: 12rem;
+  }
+}
+.selection__item img:nth-child(1) {
+  visibility: hidden;
+  opacity: 0;
+}
+.selection__item img.placeholder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  margin: -45% auto 0 !important;
+  outline: 2px solid;
+  height: auto;
+}
+.selection__item:nth-child(3) img {
+  max-width: 16rem;
+  width: 140%;
+  margin-left: -12%;
+}
+.selection__item h5 {
+  padding: 0.5rem 1rem 1.5rem;
+  font-size: 1.05rem;
+  margin-top: 0.5rem;
+}
+@media (max-width: 60rem) {
+  .selection__item h5 {
+    font-size: 1rem;
+  }
+}
+.selection__item.extra {
+  position: absolute;
+  width: calc((100% - 20%) / 3);
+  transform: scale(0) translate(-120%, -1.5%);
+  opacity: 0;
+  height: 100%;
+}
+.selection__item.extra img {
+  max-width: 19rem;
+  width: 140%;
+  margin-left: -20%;
+}
+.selection__more {
+  width: 4rem;
+  height: 4rem;
+  position: absolute;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: -10%;
+  top: 50%;
+  transform: translateY(-50%);
+  box-shadow: 0 0 0 6px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+.selection__more:hover {
+  background: #fff;
+  box-shadow: 0 0 0 12px rgba(0, 0, 0, 0.05);
+}
+.selection__more:hover svg {
+  fill: #6ebd4a;
+}
+.selection__more svg {
+  height: 40%;
+  margin-left: 0.2rem;
+  fill: #333;
+  transition: 0.2s ease;
+}
+
+.helper-text {
+  position: sticky;
+  font-family: var(--font-text);
+  font-weight: 700;
+  top: 8%;
+  left: 50%;
+  transform: translateX(-255%);
+  width: 18%;
+  max-width: 18rem;
+  margin: 2rem 0;
+  font-size: clamp(1.4rem, 2.2vw, 2.8rem);
+  line-height: 1.15;
+  color: #911051;
+}
+.helper-text small {
+  font-size: 42%;
+  display: block;
+  font-family: var(--font-text);
+  font-weight: 500;
+  text-transform: none;
+  letter-spacing: 0;
+  margin-top: 1rem;
+  text-shadow: none;
+}
+.helper-text.title {
+  font-size: clamp(1.4rem, 5vw, 4rem);
+  text-shadow: -5px -5px 0 rgba(0, 0, 0, 0.2);
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-family: var(--font-title);
+  font-weight: 500;
+  color: #fff;
+}
+@media (max-width: 60rem) {
+  .helper-text {
+    width: 96%;
+    text-align: center;
+    transform: translateX(-2%);
+    max-width: none;
+    top: 12%;
+    padding: 0 1%;
+  }
+}
+
+.last {
+  background: #f4f19c;
+}
+.last .title {
+  color: #333;
+  text-shadow: -5px -5px 0 rgba(0, 0, 0, 0.1);
+}
+
+
 @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 
