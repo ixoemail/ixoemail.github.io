@@ -31,8 +31,8 @@ class Slideshow extends React.Component {
           temperature: "35 grados C día 23 grados C noche",
           water: "Verano: 3 litros Inverno: 1.5 litros",
           nutrition: "En buen estado, buen química, bien" } }] };
-          
-          
+
+
 
 
 
