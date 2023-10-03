@@ -1,4 +1,5 @@
 
+
 class Slideshow extends React.Component {
   constructor() {
     super();
@@ -214,3 +215,5 @@ class Slide extends React.Component {
 // RENDER
 
 ReactDOM.render( /*#__PURE__*/React.createElement(Slideshow, null), document.getElementById("root"));
+
+
