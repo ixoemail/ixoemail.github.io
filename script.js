@@ -217,3 +217,4 @@ class Slide extends React.Component {
 ReactDOM.render( /*#__PURE__*/React.createElement(Slideshow, null), document.getElementById("root"));
 
 
+
