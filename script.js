@@ -1,7 +1,4 @@
-<<<<<<< Updated upstream
 
-=======
->>>>>>> Stashed changes
 
 class Slideshow extends React.Component {
   constructor() {
