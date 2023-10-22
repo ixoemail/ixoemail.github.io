@@ -177,7 +177,7 @@ class Slide extends React.Component {
 
 
       React.createElement("div", { className: "slide__details" }, /*#__PURE__*/
-      React.createElement("div", { className: "slide__details__title" }, "$890 MXN X CADA PLANTA + DISPOSITIVO"), /*#__PURE__*/
+      React.createElement("div", { className: "slide__details__title" }, "MONITOREO REMOTO"), /*#__PURE__*/
 
       React.createElement("div", { className: "slide__details__block slide__details__block--temp" }, /*#__PURE__*/
       React.createElement("h3", { className: "slide__details__subtitle" }, "Temperature"), /*#__PURE__*/
