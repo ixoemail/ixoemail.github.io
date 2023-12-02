@@ -224,7 +224,7 @@ section:not(:first-child) {
   margin: 2rem 0;
   font-size: clamp(1.4rem, 2.2vw, 2.8rem);
   line-height: 1.15;
-  color: #911051;
+  color: #4dfa6a;
 }
 .helper-text small {
   font-size: 42%;
@@ -257,9 +257,26 @@ section:not(:first-child) {
 }
 
 .last {
-  background: #f4f19c;
+  background: #cfff54;
 }
 .last .title {
-  color: #333;
+  color: #fff;
   text-shadow: -5px -5px 0 rgba(0, 0, 0, 0.1);
 }
+ .boton-circular {
+            display: inline-block;
+            background-color: #000; /* Color de fondo del botón */
+            color: #FFF; /* Color del texto del botón */
+            text-align: center;
+            text-decoration: none;
+            border-radius: 50%; /* Hace que el botón sea circular */
+            width: 60px; /* Ancho del botón */
+            height: 60px; /* Altura del botón */
+            line-height: 60px; /* Centra verticalmente el texto en el botón */
+            font-size: 16px; /* Tamaño del texto */
+            transition: background-color 0.3s ease; /* Transición suave del color de fondo al pasar el ratón */
+        }
+
+        .boton-circular:hover {
+            background-color: greenyellow; /* Color de fondo del botón al pasar el ratón */
+        }

@@ -6,7 +6,7 @@ gsap.to('.hero', {
     start: 'top top-=10%',
 		scrub: true
   },
-	background: 'linear-gradient(to bottom right, rgb(110, 189, 74), rgb(206, 240, 165))'
+	background: 'linear-gradient(to bottom right, rgb(131, 255, 110), rgb(90, 245, 64))'
 });
 
 gsap.to('.info__copy', {
@@ -67,15 +67,6 @@ gsap.to('.container', {
 });
 
 
-gsap.to('.selection__more', {
-  scrollTrigger: {
-    trigger: '.add-colors',
-    start: 'top top-=10%',
-		end: '+=150',
-		scrub: true
-  },
-	background: 'rgb(110, 189, 74)'
-});
 
 
 gsap.to('.selection__more svg', {
@@ -85,7 +76,7 @@ gsap.to('.selection__more svg', {
 		end: '+=150',
 		scrub: true
   },
-	fill: '#fff'
+	fill: '#000'
 });
 
 
@@ -212,7 +203,7 @@ gsap.to('.change-bg', {
 		end: '+=150',
 		scrub: true
   },
-	background: '#f4f19c',
+	background: '#fff',
 });
 
 gsap.to('.change-bg .helper-text', {
