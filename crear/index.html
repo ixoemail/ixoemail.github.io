@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - A Pen by Roberto Varela</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<script src="http://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js">
+</script>
+
+<h1>Combinar imagenes<h1>
+<div>
+<canvas id="original"> </canvas>
+<canvas id="greenscreen"></canvas>
+  </div>
+  
+<p>
+  <label>Imagen de fondo</label>
+<input type="file" multiple="false" accept="image/*" id="userinput" onchange="upload()">
+  <label>Imagen fondo verde</label>
+  <input type="file" multiple="false" accept="image/*" id="userinput2" onchange="upload2()">
+<br>
+  <p>
+  <canvas id="combine"></canvas>
+  <p>
+<label>Combinar las imágenes</label>
+<input type="button" value="Combinar" id="gs" onclick="greenscreen()">
+    <input type="button" value="Clear all images" id="gray" onclick="clearCanvas()">
+
+</p>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>

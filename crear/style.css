@@ -1,0 +1,25 @@
+body {
+  background-color: #191919;
+  text-align: center;
+  color: #FBFBFF;
+  font-family: courier;
+  font-size: 15px;
+}
+
+h1{
+  font-family:courier;
+  font-size:300%;
+}
+
+canvas {
+  width: 400px;
+  height: 200px;
+  border: 1px solid #FBFBFF;
+}
+input{
+  font-family:courier;
+  font-size:40%;
+}
+label{
+  font-size:30%;
+}
